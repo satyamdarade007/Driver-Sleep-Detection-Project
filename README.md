@@ -52,11 +52,6 @@ A labeled dataset for training and testing is included in the repository under t
 ```bash
 git clone https://github.com/your-username/drowsiness-detection-yolov8.git
 ```
-cd drowsiness-detection-yolov8
-2. Install Requirements
-```bash
-pip install -r requirements.txt
-```
 3. Run the Detection Script
 ```bash
 python main.py
