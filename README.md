@@ -37,10 +37,7 @@ A labeled dataset for training and testing is included in the repository under t
 ├── model/               # YOLOv8 weights and configuration
 │   ├── eye/             # Eye detection model
 │   └── yawn/            # Yawn detection model
-├── utils/               # Utility functions (EAR, head pose, alerts)
-├── examples/            # Demo images and videos
 ├── main.py              # Main script to run drowsiness detection
-├── requirements.txt     # Python dependencies
 └── README.md            # Project documentation
 ```
 ---
@@ -50,9 +47,9 @@ A labeled dataset for training and testing is included in the repository under t
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/drowsiness-detection-yolov8.git
+git clone https://github.com/rishavraj69/Drousiness-Detection-System-Using-YOLOv8.git
 ```
-3. Run the Detection Script
+2. Run the Detection Script
 ```bash
 python main.py
 ```
