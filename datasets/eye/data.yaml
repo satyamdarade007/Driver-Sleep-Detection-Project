@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['Closed', 'Open']
+
+roboflow:
+  workspace: yolo-22yar
+  project: closed-eye-ifrkb
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/yolo-22yar/closed-eye-ifrkb/dataset/4
