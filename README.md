@@ -6,9 +6,7 @@ This repository contains a computer vision-based **Drowsiness Detection System**
 
 ## 🔍 Features
 
-- Real-time face and eye detection using YOLOv8
-- Eye Aspect Ratio (EAR) and blink rate analysis
-- Head pose estimation for detecting inattentiveness
+- Real-time face and eye detection using trained YOLO model
 - Alarm/alert system when drowsiness is detected
 - Works with webcam or video file input
 - Lightweight and optimized for real-time performance
@@ -32,18 +30,19 @@ A labeled dataset for training and testing is included in the repository under t
 
 ---
 
-## 📁 Repository Structure
+### 📁 Repository Structure
 
-├── dataset/ # Labeled dataset (images + annotations)
-├── model/ # YOLOv8 weights and configuration
-│ ├── eye/ # Eye detection model
-│ └── yawn/ # Yawn detection model
-├── utils/ # Utility functions (EAR, head pose, alerts)
-├── examples/ # Demo images and videos
-├── main.py # Main script to run drowsiness detection
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
-
+```text
+├── dataset/             # Labeled dataset (images + annotations)
+├── model/               # YOLOv8 weights and configuration
+│   ├── eye/             # Eye detection model
+│   └── yawn/            # Yawn detection model
+├── utils/               # Utility functions (EAR, head pose, alerts)
+├── examples/            # Demo images and videos
+├── main.py              # Main script to run drowsiness detection
+├── requirements.txt     # Python dependencies
+└── README.md            # Project documentation
+```
 ---
 
 ## 🚀 Getting Started
@@ -52,8 +51,13 @@ A labeled dataset for training and testing is included in the repository under t
 
 ```bash
 git clone https://github.com/your-username/drowsiness-detection-yolov8.git
+```
 cd drowsiness-detection-yolov8
 2. Install Requirements
+```bash
 pip install -r requirements.txt
+```
 3. Run the Detection Script
+```bash
 python main.py
+```
