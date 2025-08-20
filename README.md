@@ -1,55 +1,98 @@
-# 🚗 Drowsiness Detection System using YOLOv8 💤
+# 🚗 Enhanced Drowsiness Detection System using YOLOv8 💤
 
-This repository contains a computer vision-based **Drowsiness Detection System** built using **YOLOv8 (You Only Look Once Version 8)**. The system is designed to monitor driver alertness in real-time by analyzing facial landmarks—especially the eyes and head posture—to detect signs of fatigue or drowsiness.
+A high-performance, real-time drowsiness detection system that monitors driver alertness using computer vision and deep learning. The system analyzes eye states and yawning patterns to detect signs of fatigue, triggering alerts to prevent potential accidents.
 
----
+![Drowsiness Detection Demo](https://via.placeholder.com/800x450.png?text=Drowsiness+Detection+Demo)
 
-## 🔍 Features
+## ✨ Key Features
 
-- Real-time face and eye detection using trained YOLO model
-- Alarm/alert system when drowsiness is detected
-- Works with webcam or video file input
-- Lightweight and optimized for real-time performance
+- 🚀 **Real-time Processing**: Optimized for high FPS performance
+- 👁️ **Multi-stage Detection**: Tracks both eye states and yawning
+- 🔔 **Smart Alerts**: Progressive warning system based on fatigue levels
+- ⚡ **GPU Acceleration**: Automatically utilizes CUDA if available
+- 🛠️ **Configurable**: Easy to adjust detection parameters via YAML config
+- 📊 **Visual Feedback**: Real-time FPS counter and status display
 
----
+## 🛠️ Technologies
 
-## 📦 Dataset Included
+- **Core**: Python 3.8+
+- **Computer Vision**: OpenCV, YOLOv8
+- **Deep Learning**: PyTorch, Ultralytics
+- **Audio Alerts**: winsound (Windows)
+- **Configuration**: YAML
 
-A labeled dataset for training and testing is included in the repository under the `dataset/` directory. It contains annotated images of:
-- Eye states (open/closed)
-- Facial expressions relevant for drowsiness and yawning detection
+## 📦 Installation
 
----
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/drowsiness-detection.git
+   cd drowsiness-detection
+   ```
 
-## 🧠 Technologies Used
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+   
+   Or install manually:
+   ```bash
+   pip install ultralytics opencv-python pyyaml
+   ```
 
-- [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) (PyTorch)
-- OpenCV for video and image processing
-- Dlib / Mediapipe (optional) for facial landmarks
-- Python 3.x
+3. **Download pre-trained models**
+   - Place your YOLOv8 models in the `model/` directory
+   - Update the paths in `config.yaml` if needed
 
----
+## 🚀 Usage
 
-### 📁 Repository Structure
+1. **Run the detection system**
+   ```bash
+   python enhanced_detector.py
+   ```
 
-```text
-├── dataset/             # Labeled dataset (images + annotations)
-├── model/               # YOLOv8 weights and configuration
-│   ├── eye/             # Eye detection model
-│   └── yawn/            # Yawn detection model
-├── main.py              # Main script to run drowsiness detection
-└── README.md            # Project documentation
+2. **Keyboard Controls**
+   - `Q`: Quit the application
+   - `P`: Pause/Resume detection
+
+## ⚙️ Configuration
+
+Edit `config.yaml` to customize:
+- Detection thresholds
+- Alert settings
+- Performance parameters
+- Display options
+
+## 📂 Project Structure
+
 ```
----
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/rishavraj69/Drousiness-Detection-System-Using-YOLOv8.git
+.
+├── config.yaml           # Configuration file
+├── enhanced_detector.py  # Main application
+├── requirements.txt      # Python dependencies
+├── buzzer.mp3           # Alert sound
+├── model/               # YOLO models
+│   ├── eye/            # Eye state detection
+│   └── yawn/           # Yawn detection
+└── README.md           # This file
 ```
-2. Run the Detection Script
-```bash
-python main.py
-```
+
+## 📈 Performance Tips
+
+- Use a CUDA-enabled GPU for best performance
+- Adjust `frame_skip` in `config.yaml` for different performance/accuracy tradeoffs
+- Lower resolution in `_capture_frames()` for faster processing
+- Close other GPU-intensive applications
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)
+- OpenCV community
+- All contributors and supporters

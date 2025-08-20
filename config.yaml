@@ -1,0 +1,24 @@
+# Model paths (relative to the script location)
+eye_model_path: "model/eye/runs/detect/train3/weights/best.pt"
+yawn_model_path: "model/yawn/runs/detect/train/weights/best.pt"
+
+# Detection thresholds
+eye_close_threshold: 30   # Lowered from 100 for faster response
+yawn_threshold: 30        # Lowered from 90 for faster response
+critical_yawn_threshold: 50  # Lowered from 120 for faster response
+
+# Performance settings
+frame_skip: 1            # Process every frame (was 2)
+gpu_acceleration: true   # Use GPU if available
+confidence_threshold: 0.4  # Slightly lower confidence for better detection
+
+# Alert settings
+alert_frequency: 1500     # Higher frequency for better alert
+alert_duration: 150       # Slightly longer duration
+
+# Display settings
+display_fps: true        # Show FPS counter
+display_status: true     # Show status text
+
+# Logging
+log_level: "WARNING"     # Reduced logging for better performance
