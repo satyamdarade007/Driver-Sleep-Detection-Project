@@ -1,8 +1,7 @@
-# 🚗 Enhanced Drowsiness Detection System using YOLOv8 💤
+# 🚗 Enhanced Driver Sleep Detection System using YOLOv8 💤
 
 A high-performance, real-time drowsiness detection system that monitors driver alertness using computer vision and deep learning. The system analyzes eye states and yawning patterns to detect signs of fatigue, triggering alerts to prevent potential accidents.
 
-![Drowsiness Detection Demo](https://via.placeholder.com/800x450.png?text=Drowsiness+Detection+Demo)
 
 ## ✨ Key Features
 
@@ -95,4 +94,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)
 - OpenCV community
-- All contributors and supporters
+
